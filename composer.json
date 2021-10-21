@@ -1,5 +1,7 @@
 {
     "name": "cristof-g/auto-zurich-ws-wrapper",
+    "description": "Library for connect to Zurich Web Service",
+    "license": "MIT",
     "require": {
         "laminas/laminas-soap": "^2.9"
     },
