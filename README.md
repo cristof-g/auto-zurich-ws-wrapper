@@ -5,48 +5,56 @@
 
 ## Catalogos
 #### Entidades Catalogo
+```php
+$entidades = new WsZurich\Wrapper\EntidadesCatalogo();
+```
+
 Obtener Estados
 ```php
-getEstados();
+$entidades->getEstados();
 ```
 
 Obtener Municipios
 ```php
-getMunicipios($claveEstado);
+$entidades->getMunicipios($claveEstado);
 ```
 
 Obtener Asentamientos
 ```php
-getAsentamientos($claveEstado, $claveMunicipio)
+$entidades->getAsentamientos($claveEstado, $claveMunicipio)
 ```
 
 Obtener Direccion por Códigos Postal
 ```php
-getDireccionByCodigoPostal($codigoPostal)
+$entidades->getDireccionByCodigoPostal($codigoPostal)
 ```
 
 Obtener Códigos Postales
 ```php
-getCodigosPostales($claveEstado, $claveMunicio, $claveAsentamiento)
+$entidades->getCodigosPostales($claveEstado, $claveMunicio, $claveAsentamiento)
 ```
 
 #### Vehiculos Catalogo
+```php
+$vehiculos = new WsZurich\Wrapper\VehiculosCatalogo();
+```
+
 Obtener Marcas
 ```php
-getMarcas($tipoVehiculo)
+$vehiculos->getMarcas($tipoVehiculo)
 ```
 
 Obtener Submarcas
 ```php
-getSubMarcas($tipoVehiculo, $claveMarca)
+$vehiculos->getSubMarcas($tipoVehiculo, $claveMarca)
 ```
 
 Obtener Modelos
 ```php
-getModelos($tipoVehiculo, $claveMarca, $claveSubMarca)
+$vehiculos->getModelos($tipoVehiculo, $claveMarca, $claveSubMarca)
 ```
 
 Obtener Detalle del vehiculo
 ```php
-getDetalle($claveZurich)
+$vehiculos->getDetalle($claveZurich)
 ```
